@@ -1,0 +1,2 @@
+GUARDAR = Control + S
+COMENTARIO = ALT + SHIFT + A
