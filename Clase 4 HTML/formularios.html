@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <!-- 
+    form =>  se usa para declarar un formulario
+    input => Se usa para declarar un campo de ingreso de informacion de un formulario
+        Atributo type => Marca que tipo de input es, por defecto el valor es text
+        Atributo name => Marca programaticamente el nombre del campo
+        Atributo value => Sirve para setear el valor del input
+    label => Se usa para indicar al usuario que informacion debe escribir en cada campo
+    submit button => Sirve para desecadenar el evento de envio de formulario
+
+    La info del formulario de momento no se envia a ningun lugar, eso lo veremos mas adelante con JS
+    -->
+
+    <form>
+        <h1>Iniciar sesion</h1>
+        <div>
+            <label>
+                Ingrese su nombre de usuario:
+                <input type="text" name="username" value="Ejemplo-123" required>
+            </label>
+        </div>
+        <div>
+            <label for="email">Ingrese su email:</label>
+            <input type="email" id="email" name="email" placeholder="jonhdoe@mail.com" required>
+        </div>
+        <div>
+            <label for="">Ingrese su contraseña:</label>
+            <input type="password" name="password">
+        </div>
+
+        <div>
+            <label for="">Tu fecha de nacimiento:</label>
+            <input type="date" name="birth-date">
+        </div>
+
+        <div>
+            <span>Elige el pais de origen</span>
+            <div>
+                <label>
+                    Argentina
+                    <input type="radio" name="orgin-country" checked value="AR">
+                </label>
+                
+                <label>
+                    Francia
+                    <input type="radio" name="orgin-country" value="FR">
+                </label>
+                
+                <label>
+                    Brasil
+                    <input type="radio" name="orgin-country" value="BR">
+                </label>
+            </div>
+        </div>
+
+        <div>
+            <span>Elige el motivo de ingreso</span>
+            <div>
+                <label>
+                    Curiosidad
+                    <input type="checkbox" name="reason" value="1">
+                </label>
+                
+                <label>
+                    Tramite
+                    <input type="checkbox" name="reason" value="2">
+                </label>
+                
+                <label>
+                    Campaña de marketing
+                    <input type="checkbox" name="reason" value="3">
+                </label>
+            </div>
+        </div>
+        <div>
+            <label for="favorite-colour">Seleccione un color favorito</label>
+            <select name="favorite-colour" id="favorite-colour">
+                <option value="red">Rojo</option>
+                <option value="green">Verde</option>
+                <option value="blue">Azul</option>
+                <option selected value="NA" disabled>No seleccionado</option>
+            </select>
+        </div>
+        <div>
+            <label for="message">Mensaje:</label>
+            <textarea name="message" id="message" rows="10" cols="20"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
