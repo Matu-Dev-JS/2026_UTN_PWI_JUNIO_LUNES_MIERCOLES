@@ -1,0 +1,43 @@
+h1 {
+    color: red;
+    font-size: 120px;
+}
+
+.titulo{
+    color: blueviolet;
+}
+
+.subrayado{
+    text-decoration: 1px solid underline black;
+}
+/* 
+ESTO ES UNA MALA PRACTICA, NO usar ids para css en cambio usar clases
+#titulo-especial{
+    background-color: black;
+    text-shadow: 1px 1px 10px rgb(211, 184, 236);
+} */
+
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* 
+Selectores CSS
+    Nos sirven para seleccionar elementos de nuestro HTML
+
+    - Elementos => permiten seleccionar elementos HTML
+        h1{} = Todos los h1
+
+    - Clase => Permiten seleccionar a todos los elementos que tengan x clase
+        .titulo{} = Todos los elementos con la clase titulo
+
+    - ID => Permiten seleccionar a todos los elementos que tengan un x ID
+        #titulo-especial{} = Todos los elementos con el id titulo-especial
+    
+    - Selector universal => Permite selecciona a todos los elementos del HTML
+        *{} = Todos los elementos tendran este estilo
+
+
+ESPECIFICIDAD
+*/
