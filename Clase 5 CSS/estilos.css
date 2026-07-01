@@ -1,26 +1,36 @@
-h1 {
-    color: red;
-    font-size: 120px;
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
 }
 
 .titulo{
     color: blueviolet;
 }
 
+.titulo{
+    color: green;
+}
+
+h1 {
+    color: red;
+    font-size: 120px;
+} 
+
+
+
+
 .subrayado{
     text-decoration: 1px solid underline black;
 }
-/* 
-ESTO ES UNA MALA PRACTICA, NO usar ids para css en cambio usar clases
-#titulo-especial{
+
+/* ESTO ES UNA MALA PRACTICA, NO usar ids para css en cambio usar clases */
+/* #titulo-especial{
     background-color: black;
     text-shadow: 1px 1px 10px rgb(211, 184, 236);
-} */
-
-
-*{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+ */
+
+
 
 /* 
 Selectores CSS
@@ -40,4 +50,9 @@ Selectores CSS
 
 
 ESPECIFICIDAD
+    La especificidad es determinada por que tan espeficico es el selector/tipo de css que usamos.
+
+    A mas especificidad mas especifica es una orden y por ende mas importancia tiene.
+
+    Si la especificidad es la misma entonces se definira la orden por el orden de lectura, la ultima orden sera la valida.
 */
