@@ -2,12 +2,18 @@
 
 *{
     font-family: "Poppins", sans-serif;
+    /* 
+    box-sizing define a donde esta afectando el ancho y el alto (width y el height), por ejemplo por defecto es content-box (caja de contenido)
+    */
+    box-sizing: border-box;
 }
 
 h1{
 
     font-family: "Montenegrin Gothic One", serif;
     text-decoration: underline 2px blue solid;
+   /*  text-shadow: 0px 0px 3px black; */
+    -webkit-text-stroke: rgb(231, 56, 56) 1px;
     /* 
     color
     text-aling
@@ -24,11 +30,14 @@ h1{
 
 p{
     font-weight: 300;
+    margin: 0;
 }
 
 a{
     color: black;
     text-decoration: none;
+    width: 200px;
+    background-color: blueviolet;
 }
 
 
@@ -36,12 +45,77 @@ a{
 font-family
 text-decoration = Subrayar y demas
 
-width
-height
-padding
-margin
-border = Podemos hacer bordes
+
+box-modeling:
+    width
+    height
+    border = Podemos hacer bordes
+    padding
+    margin
 
 box-shadow = sombras 
 text-shadow = sombras en texto
 */
+
+/* 
+Los elementos se separan en 3 categorias:
+    - block:
+        - Podemos modificar el ancho y alto
+        - Ocupan todo el bloque
+
+        EJ: div, h1..h6, etiquetas semanticas, form
+
+    - inline
+        - NO podemos modificar el ancho y alto
+        - Ocupa SOLO su contenido y deja que otros elementos se alineen con el
+
+        EJ: span, a, label
+
+    - inline-block
+        - Podemos modificar el ancho y alto
+        - Ocupa SOLO su contenido y deja que otros elementos se alineen con el
+
+        EJ: button, img, video, input
+
+*/
+
+
+.caja{
+
+    display: inline-block;
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    /* border: 5px solid black; */
+    border-right: 5px solid black;
+    padding: 10px 20px 30px 40px;
+    /* padding-right: 20px;
+    padding-left: 20px; */
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.caja-2{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+button{
+    width: 130px;
+    height: 50px;
+}
+
+.caja-3{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 50px;
+    box-shadow: 
+        300px -150px 10px -30px black,
+        100px 150px 10px -30px rgb(231, 21, 21),
+        inset 2px 0px 10px white
+    ;
+    border-radius: 10px;
+}
