@@ -5,25 +5,34 @@
     padding: 0;
 }
 
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+}
 
 .padre{
     background-color: green;
     height: 100vh; /* 100vh = 100% de alto del viewport */
-    width: 100vw;
+    
 
     /* Activamos flexbox en este elemento */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     
     /* 
     Cuando la flex-direction sea row justify-content mueve los hijos respecto al eje X (Horizontalmente)
     */
-    justify-content: center;
+    justify-content: space-between;
 
     /* 
     Cuando la flex-direction sea row aling-item mueve los hijos respecto al eje Y (Verticalmente)
     */
-    align-items: end;
+    align-items: start;
+    gap: 20px;
+    /* flex-wrap: wrap; */
 }
 
 .hijo{

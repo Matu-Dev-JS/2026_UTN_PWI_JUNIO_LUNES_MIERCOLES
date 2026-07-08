@@ -1,0 +1,24 @@
+1) 
+Blizzard Footer
+URL: https://www.blizzard.com/es-es/
+
+Dificultad: Facil
+
+2)
+MDN
+https://developer.mozilla.org/es/
+
+Dificultad: Media (+facil)
+
+3)
+Hostinger
+URL: https://www.hostinger.com/tutorials/learning-lab?redirect_back_url=https%3A%2F%2Fwww.hostinger.com%2Far
+
+Dificultad: Dificil
+
+
+RECOMENDACIONES:
+ - Si algo no sale, van a otro ejercicio o descansen e intenten mas tarde.
+ - Si no encuentran cierto icono, color, x cosa no relacionada a flexbox, omitanlo y pongan lo que quieran. PRIORIZAMOS APRENDER FLEXBOX
+ - Primero dibujen/boceten/planifiquen la flexbox.
+ - No busquen repetir las grabaciones eternamente, NI MUCHO MENOS busquen replicar mi codigo para aprender (SOLO VAN A PERDER EL TIEMPO) la mejor forma de aprender es con objetivos.
