@@ -1,0 +1,44 @@
+/* Normalizacion */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.padre{
+    background-color: green;
+    height: 100vh; /* 100vh = 100% de alto del viewport */
+    width: 100vw;
+
+    /* Activamos flexbox en este elemento */
+    display: flex;
+    flex-direction: column;
+    
+    /* 
+    Cuando la flex-direction sea row justify-content mueve los hijos respecto al eje X (Horizontalmente)
+    */
+    justify-content: center;
+
+    /* 
+    Cuando la flex-direction sea row aling-item mueve los hijos respecto al eje Y (Verticalmente)
+    */
+    align-items: end;
+}
+
+.hijo{
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.hijo-1{
+    background-color: blue;
+}
+.hijo-2{
+    background-color: aqua;
+}
+.hijo-3{
+    background-color: blueviolet;
+}
