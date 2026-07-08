@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{
     font-family: "Poppins", sans-serif;
     /* 
@@ -33,12 +34,12 @@ p{
     margin: 0;
 }
 
-a{
+/* a{
     color: black;
     text-decoration: none;
     width: 200px;
     background-color: blueviolet;
-}
+} */
 
 
 /* 
@@ -102,11 +103,11 @@ Los elementos se separan en 3 categorias:
     background-color: blue;
 }
 
-button{
+/* button{
     width: 130px;
     height: 50px;
 }
-
+ */
 .caja-3{
     width: 200px;
     height: 200px;
@@ -118,4 +119,44 @@ button{
         inset 2px 0px 10px white
     ;
     border-radius: 10px;
+}
+
+.turno{
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    background-color: rgb(239, 174, 54);
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-weight: 600;
+    color: rgb(68, 66, 66);
+}
+
+
+.btn-primary {
+    color:rgb(255, 255, 255);
+    background-color:black;
+    border: none;
+    font-size: 16px;
+    padding: 12px 22px;
+    text-decoration:none;
+    border-radius: 5px;
+    font-family: 'open sans',sans-serif;
+}
+
+
+
+.paragraph{
+    background-color: #191610;
+    color:#c9c9c9;
+    padding: 40px 0; /* Solo para ver bien, no es necesario */
+    font-family: 'open sans',sans-serif;
+}
+.link-primary {
+    color: #f3be43; 
+    text-decoration: none;
 }
