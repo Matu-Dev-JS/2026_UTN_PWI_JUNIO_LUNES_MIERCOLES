@@ -1,0 +1,104 @@
+/* fuente hostinger */
+
+@import url('https://fonts.googleapis.com/css2?family=Copse&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wdth,wght@108.9,200..900&family=Noto+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* fuente blizzar footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Copse&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wdth,wght@108.9,200..900&family=Noto+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+
+
+.titulo {
+    color: #1d1e20;
+    font-size: 56px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.descripcion {
+    color: #58585e;
+    font-size: 16px;
+    text-align: center;
+}
+
+.seccion-principal{
+    background-color: #F8F9FA;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.seccion-planos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.seccion-contenido{
+    width: 1200px;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tarjeta {
+
+    width: 30%;
+    border-radius: 15px;
+    padding: 20px;
+    min-height: 160px;
+}
+
+
+
+.titulo-tarjeta {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+/* footer blizzard */
+
+.footer {
+    font-family: "Archivo", sans-serif;
+    background-color: #1c193f;
+    margin-top: 60px;
+    padding: 35px 80px;
+}
+
+.contenido-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enlaces-footer {
+    display: flex;
+    gap: 30px;
+}
+
+.enlaces-footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.idioma-footer {
+    color: white;
+    font-weight: 600;
+}
