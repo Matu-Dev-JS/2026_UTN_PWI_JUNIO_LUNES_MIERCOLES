@@ -22,13 +22,15 @@ body {
     color: #1d1e20;
     font-size: 56px;
     font-weight: 400;
-    text-align: center;
     letter-spacing: 2px;
 }
 
 .descripcion {
     color: #58585e;
     font-size: 16px;
+}
+
+.text-center{
     text-align: center;
 }
 
@@ -44,24 +46,35 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 70px 0;
 }
 
 .seccion-contenido{
-    width: 1200px;
+    width: 1166px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .tarjetas {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 15px;
+}
+
+.tarjetas-fila{
+    display: flex;
+    flex-direction: row;
+    gap:15px;
 }
 
 .tarjeta {
 
-    width: 30%;
+    flex: 1;
     border-radius: 15px;
     padding: 20px;
     min-height: 160px;
+    background-color: #F8F9FA;
 }
 
 
@@ -72,33 +85,20 @@ body {
     margin-top: 15px;
 }
 
-/* footer blizzard */
 
-.footer {
-    font-family: "Archivo", sans-serif;
-    background-color: #1c193f;
-    margin-top: 60px;
-    padding: 35px 80px;
+
+.boton-pildora{
+    background-color: #f2f2f2;
+    padding: 0 12px ;
+    height: 32px;
+    border-radius: 999px;
+    border: none;
+    font-size: 14px;
+    color: #18181a;
 }
 
-.contenido-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.enlaces-footer {
-    display: flex;
-    gap: 30px;
-}
-
-.enlaces-footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.idioma-footer {
-    color: white;
-    font-weight: 600;
+.boton-pildora--seleccionada{
+    background-color: #18181a;
+    color: #FFFFFF;
+    font-weight: 700;
 }
