@@ -1,0 +1,145 @@
+/* fuente hostinger */
+
+@import url('https://fonts.googleapis.com/css2?family=Copse&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wdth,wght@108.9,200..900&family=Noto+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* fuente blizzar footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Copse&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wdth,wght@108.9,200..900&family=Noto+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+
+.boton-menu{
+    display: none;
+}
+
+.titulo {
+    color: #1d1e20;
+    font-size: 56px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.descripcion {
+    color: #58585e;
+    font-size: 16px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.seccion-principal{
+    background-color: #F8F9FA;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.seccion-planos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.seccion-contenido{
+    width: 1166px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tarjetas-fila{
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+}
+
+.tarjeta {
+
+    flex: 1;
+    border-radius: 15px;
+    padding: 20px;
+    min-height: 160px;
+    background-color: #F8F9FA;
+}
+
+
+
+.titulo-tarjeta {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+
+
+.boton-pildora{
+    background-color: #f2f2f2;
+    padding: 0 12px ;
+    height: 32px;
+    border-radius: 999px;
+    border: none;
+    font-size: 14px;
+    color: #18181a;
+}
+
+.boton-pildora--seleccionada{
+    background-color: #18181a;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+/* 
+
+Cuando la pantalla mida menos de 1300px (Tenga un ancho de como maximo 1300px) se aplicara el siguiente bloque de codigo css
+*/
+@media screen and (max-width: 1300px){
+    .seccion-principal{
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .boton-menu{
+        display: flex;
+    }
+    nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .seccion-principal{
+        background-color: rgb(0, 0, 255);
+    }
+}
+
+@media screen and (max-width: 500px){
+    .seccion-principal{
+        display: none;
+    }
+}
