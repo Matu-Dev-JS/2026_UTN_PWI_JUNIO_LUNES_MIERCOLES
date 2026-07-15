@@ -1,0 +1,147 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+/* normalizacion */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bloque{
+    margin-top: 50px;
+    border: 1px solid black;
+    margin-bottom: 2000px;
+}
+
+.header-bloque{
+    position: sticky;
+    top: 32px;
+    z-index: 20;
+    background-color: white;
+}
+
+.padre{
+    height: 100vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.hijo{
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.hijo:nth-child(1){
+    background-color: blueviolet;
+}
+.hijo:nth-child(2){
+    background-color: red;
+    /* Cuando usamos position absolute nos interesa que el padre tenga un position distinto de static, para que sirva de contenedor y punto 0 de las propiedades top, bottom, left, right */
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+
+
+    /* RELATIVE */
+   /*  position: relative; */
+    /* top: 200px; */
+    /* bottom: 100px; */
+   /*  right: ; */
+   /*  left: 50px; */
+    /* z-index: 2; */
+}
+.hijo:nth-child(3){
+    background-color: blue;
+   /*  z-index: 3; */
+}
+
+header{
+    background-color: rgba(255, 255, 0, 0.384);
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    /* position: sticky;
+    top:0; */
+}
+
+form{
+    width: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+form input{
+    width: 100%;
+    padding: 8px 16px;
+}
+
+.search-btn{
+    position: absolute;
+    right: 16px;
+    border: none;
+    background-color: transparent;
+}
+
+
+/* .publicidad{
+    padding: 16px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 600px;
+    border: 1px solid black;
+    position: fixed;
+    background-color: white;;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.publicidad-overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.publicidad{
+    padding: 16px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 600px;
+    border: 1px solid black;
+    background-color: white;;
+}
+
+.publicidad h2{
+    text-align: center;
+}
+
+.publicidad img{
+    width: 100%;
+}
