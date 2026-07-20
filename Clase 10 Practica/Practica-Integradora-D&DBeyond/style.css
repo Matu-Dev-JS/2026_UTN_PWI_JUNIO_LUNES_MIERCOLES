@@ -1,0 +1,82 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+
+/* CSS Variables */
+:root{
+    --primary-color: #CF020C;
+    --text-color-500: #AFB6B9;
+    --text-color-550: #c4cbce;
+    --text-color-600: #A2ACB2;
+    --background-primary-gradiant: linear-gradient(45deg,rgba(18, 24, 28, 1) 0%, rgba(0, 0, 0, 1) 99%);
+    --background-primary: #12181C;
+    --backgound-secondary: #232B2F;
+    --ff-primary: "Roboto Flex", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-primary);
+}
+
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 0;
+    background-color: var(--background-primary);
+    color: var(--text-color-600);
+}
+
+.banner a{
+    font-size: 16px;
+    color: var(--text-color-600);
+    text-decoration: 1px solid var(--text-color-600) underline;
+
+}
+
+.banner-btn{
+    background-color: transparent;
+    border: none;
+    color: var(--text-color-550);
+}
+
+.banner-btn:disabled{
+    color: #75838b;
+}
+
+.btn-terciary{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px 12px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-terciary:hover{
+    background-color: #232b2f;   
+}
+
+
+@media screen and (max-width: 1240px){
+    .banner div{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .banner div a{
+        text-align: center;
+    }
+    
+    .banner{
+        padding: 16px 10px;
+    }
+}

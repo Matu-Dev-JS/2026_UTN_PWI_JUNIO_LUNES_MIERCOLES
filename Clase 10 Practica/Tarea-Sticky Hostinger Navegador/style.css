@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    background-color: #101011;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+}
+.hos-separacion-sup {
+    height: 30vmin;
+    background-color: white;
+    border-bottom: 5px dashed black;
+}
+
+.hos-separacion-inf {
+    height: 30vmin;
+    background-color: white;
+}
+
+.hos-hero-section {
+    background-color: #101011;
+    height: 110vmin;
+}
+
+.hos.menu-nav {
+    display: flex;
+    flex-direction: row;
+align-items: flex-start;
+gap: 3vmin;
+}
+
+.hos-logo-hos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.3vmin;
+}
+
+.hos-h-de-hostinger-logo {
+    height: 6vmin;
+}
+
+.hos-de-hostinger-logo {
+    height: 2.9vmin;
+}
+
+.hos-menu-nav {
+    display: flex;
+    align-items: center;
+    height: 10vmin;
+    list-style: none;
+    gap: 5vmin;
+
+}
+
+.hos-menu-item {
+    font-size: 2.2vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-decoration: none;    
+    color:white
+}
+
+.hos-menu-novedad {
+    background-color: #0d2d20;   /* Verde oscuro de fondo */
+    color: #10b981;              /* Verde claro/brillante para el texto */
+    font-size: 2vmin;              /* Tamaño de texto relativo */
+    font-weight: bold;             /* Texto en negrita */
+    padding: 5px 8px;              /* Relleno interno (arriba/abajo - izquierda/derecha) */
+    border-radius: 6px;            /* Bordes redondeados */
+    letter-spacing: 0.5px;         /* Separación entre letras */
+    
+    display: inline-block;         /* Alineación limpia sin necesidad de display: flex */    
+}
+
+.hos-video-redondeado {
+    background-color: #1e1e1e; /* Fondo oscuro */
+  border-radius: 16px;       /* Bordes redondeados */
+  overflow: hidden;          /* Recorta lo que esté adentro (videos, imágenes, etc.) */
+  max-width: 90%;          /* O un ancho relativo/porcentaje */
+  margin: 20px auto;         /* Centrado y separado de los bordes */
+}
+
+.content{
+    height: 300vh;
+    background-color: white;
+}

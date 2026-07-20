@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+header h1{
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 900;
+    gap: 50px;
+}
+
+.menu-container {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: white;
+}
+
+.menu-navegation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 40px 16px 32px;
+    width: 100%;
+}
+
+.section-left {
+    display: flex;
+    align-items: center;
+
+    gap: 24px;
+}
+
+.navegation-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.IA-btn {
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 10px;
+    border: 2px solid #943A90;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+}
+
+.language-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.main-container {
+    padding: 16px 32px 16px 32px;
+    background-color: rgb(16,16,17);
+}
+
+
+.section-video {
+   /*  padding: 16px 32px 16px 32px; */
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 556px;
+    overflow: hidden;
+
+}
+
+.section-video video {
+    width: 100%;
+}
+
+
+.pause-btn{
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    border: 1px solid rgb(85, 84, 84);
+    background-color: rgba(0, 0, 0, 0.107);
+    color: white;
+    cursor: pointer;
+}
+
+.pause-btn:hover{
+    border: 1px solid rgb(161, 159, 159);
+}
+
+.text-video {
+    position: absolute;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    width: 500px;
+}
+
+.text-video h1 {
+    font-size: 56px;
+    font-weight: 300;
+    flex-wrap: wrap;
+}
+.text-video p {
+    font-size: 16px;
+}
+
+.primary-btn{
+    background-color: white;
+    border-radius: 8px;
+    padding: 12px 45px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+}
