@@ -1,0 +1,45 @@
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 0;
+    background-color: var(--background-primary);
+    color: var(--text-color-600);
+}
+
+.banner a{
+    font-size: 16px;
+    color: var(--text-color-600);
+    text-decoration: 1px solid var(--text-color-600) underline;
+
+}
+
+.banner-btn{
+    background-color: transparent;
+    border: none;
+    color: var(--text-color-550);
+}
+
+.banner-btn:disabled{
+    color: #75838b;
+}
+
+
+@media screen and (max-width: 1240px){
+    .banner div{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .banner div a{
+        text-align: center;
+    }
+    
+    .banner{
+        padding: 16px 10px;
+    }
+}

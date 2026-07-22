@@ -1,0 +1,102 @@
+header{
+    background-color: var(--backgound-secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 2px solid #525C63;
+    padding: 0px 10px;
+}
+
+.header-content{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.header-left .header-brand svg{
+    height: 40px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 700;
+    color: var(--text-color-550);
+    font-size: 14px;
+    height: 64px;
+    text-decoration: none;
+}
+
+.header-right{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.login-btn{
+    background-color: transparent;
+    border: none;
+    color: var(--text-color-550);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px 16px;
+}
+
+.login-btn i {
+    font-size: 18px;
+}
+
+.login-btn:hover{
+    color: white;
+}
+
+.menu-btn{
+    display: none;
+}
+
+
+@media screen and (max-width: 1240px) {
+    header{
+        padding: 12px 16px;
+    }
+    nav{
+        display: none;
+    }
+
+    .create-account-btn{
+        display: none;
+    }
+    .menu-btn{
+        display: flex;
+    }
+
+    .login-btn span{
+        display: none;
+    }
+}
