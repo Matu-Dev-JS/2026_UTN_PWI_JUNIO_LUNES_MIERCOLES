@@ -151,3 +151,80 @@ true + 1 //2
 //Multiplicacion: *
 
 //Cualquier operacion (excepto la concatenacion con NaN da NaN)
+
+
+//Variables
+
+
+//VAR antes de ES6, no se recomienda usar
+
+//Podes redeclarar
+//Poder reasingar
+//Tiene hoisting
+//El valor por defecto si no asignas algo es undefined
+
+/* var apellido
+console.log(apellido)
+ */
+/* console.log(nombre)
+var nombre = 'pepe'
+var nombre = 'pepe'
+nombre = nombre + ' suarez'
+
+console.log("Hola mi nombre es " + nombre) */
+
+
+
+//LET +ES6
+
+//Poder reasingar
+//Podes redeclarar (en distinto bloque)
+//El valor por defecto si no asignas algo es undefined
+//NO Tiene hoisting
+
+
+/* let nombre = 'pepe'
+
+
+{
+    let nombre = 'jose' 
+    console.log(nombre)
+}
+
+{
+    nombre = 'maria'
+}
+
+console.log(nombre) */
+
+//CONST +ES6: Se usa para los valores que seran iguales desde el incio hasta el final del programa
+//NO Poder reasingar
+//Podes redeclarar (en distinto bloque)
+//NO tiene valor por defecto
+//NO Tiene hoisting
+
+/* const app_version = '1.0'
+const IVA = 21 */
+
+let nombre = prompt('Ingrese su nombre:')
+
+if(nombre == 'pedro'){
+    console.log("Que haces aca? 🤬")
+}
+else{
+    console.log("Bienvenido/a " + nombre + '!')
+}
+
+
+/* 
+Solicitar al usuario una contraseña, si la contraseña coincide con password_123 decir 'Inicio de sesion exitoso' sino decir 'Credenciales invalidas, vuelva a intentar'
+*/
+
+
+let contrasenia = prompt('Ingrese una contraseña:')
+if(contrasenia == 'password_123'){
+    console.log('Incio de sesion exitoso')
+}
+else{
+    console.log('Credenciales invalidas, vuelva a intentar')
+}
