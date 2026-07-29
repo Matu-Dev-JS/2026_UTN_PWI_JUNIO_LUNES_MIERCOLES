@@ -132,7 +132,7 @@ Si la operacion no es ninguno de los anteriores deberemos decir por consola "Ope
 
 */
 
-let numeroA = Number(prompt("Ingrese un numero:"))
+/* let numeroA = Number(prompt("Ingrese un numero:"))
 let numeroB = Number(prompt("Ingrese otro numero:"))
 let operacion = prompt("Ingrese una operacion (+, -, sumar, restar):")
 switch (operacion) {
@@ -149,4 +149,28 @@ switch (operacion) {
     default:
         console.log("Operacion invalida, vuelva a intentar")
 
+} */
+
+
+/* 
+WHILE
+
+Es un bucle condicional
+El bucle es la repeticion de un codigo
+Lo podemos leer como: Mientras esta condicion se cumpla volveremos a repetir la accion
+SIEMPRE que hagan un while, asegurensen de verificar que el while pueda ser false, sino vas a tener un bucle infinito
+*/
+
+/* let numero = prompt("Ingrese un numero")
+
+while(isNaN(numero) || numero === null || numero === ''){
+    alert('Error, numero no valido')
+    numero = prompt('Ingrese el numero')
 }
+
+alert('Numero valido') */
+
+/* 
+Solicitar al usuario una operacion (Que puede ser "+", "-"", 'sumar', 'restar')
+Verificar que la operacion sea valida, en caso de no serlo volver a solicitar
+*/
