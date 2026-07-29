@@ -93,4 +93,41 @@ else{
 
 
 //switch
-//while
+/* 
+Nos sirve para condicionar y lo vamos a utilizar principalmente en condiciones multiples de estricta igual
+*/
+
+/* 
+Acciones disponibles
+"SALTAR" | "CORRER" | "CAMINAR" | "TROTAR"
+*/
+
+/* let accion = "CORRER"
+
+switch (accion){
+    case "SALTAR": 
+        console.log("Estoy saltando!")
+        break
+    case "CORRER":
+    case "RUN":
+        console.log('Estoy corriendo!')
+        break
+    case "CAMINAR": 
+        console.log("Estoy caminando!")
+        break
+    default:
+        console.log("ERROR: Accion no definida")
+} */
+
+
+/* 
+Solicitar al usuario un numero A (Asumimos que el usuario escribira correctamente un numero)
+Solicitar al usuario un numero B (Asumimos que el usuario escribira correctamente un numero)
+Solicitar al usuario una operacion 
+
+USANDO SWITCH
+Si la operacion es "+" o "sumar" entonces deberemos por consola mostrar el resultado de la suma de A + B es C
+Si la operacion es '-' o "restar" entonces deberemos por consola mostrar el resultado de la resta de A - B es C 
+Si la operacion no es ninguno de los anteriores deberemos decir por consola "Operacion invalida, vuelva a intentar"
+
+*/
