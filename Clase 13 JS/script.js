@@ -90,3 +90,7 @@ else{
     console.log('Operacion invalida, vuelva a intentar')
 }
  */
+
+
+//switch
+//while
