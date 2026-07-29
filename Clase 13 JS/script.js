@@ -171,6 +171,18 @@ while(isNaN(numero) || numero === null || numero === ''){
 alert('Numero valido') */
 
 /* 
-Solicitar al usuario una operacion (Que puede ser "+", "-"", 'sumar', 'restar')
+Solicitar al usuario una operacion (Que puede ser "+", "-", 'sumar', 'restar')
 Verificar que la operacion sea valida, en caso de no serlo volver a solicitar
 */
+
+let operacion = prompt("Ingrese una operación");
+while (
+    operacion !== "+" &&
+    operacion !== "-" &&
+    operacion !== "sumar" &&
+    operacion !== "restar"
+) {
+    alert("Error, operación no válida");
+    operacion = prompt("Ingrese una operación");
+}
+alert("Operación válida");
