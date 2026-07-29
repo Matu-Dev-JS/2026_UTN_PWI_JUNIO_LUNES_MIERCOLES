@@ -131,3 +131,22 @@ Si la operacion es '-' o "restar" entonces deberemos por consola mostrar el resu
 Si la operacion no es ninguno de los anteriores deberemos decir por consola "Operacion invalida, vuelva a intentar"
 
 */
+
+let numeroA = Number(prompt("Ingrese un numero:"))
+let numeroB = Number(prompt("Ingrese otro numero:"))
+let operacion = prompt("Ingrese una operacion (+, -, sumar, restar):")
+switch (operacion) {
+    case "+":
+    case "sumar":
+        let suma = numeroA + numeroB
+        console.log("El resultado de la suma es: " + suma)
+        break
+    case "-":
+    case "restar":
+        let resta = numeroA - numeroB
+        console.log("El resultado de la resta es: " + resta)
+        break
+    default:
+        console.log("Operacion invalida, vuelva a intentar")
+
+}
