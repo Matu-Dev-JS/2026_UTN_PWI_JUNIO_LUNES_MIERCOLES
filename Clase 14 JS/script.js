@@ -76,7 +76,7 @@ if(seleccionado === 'pan'){
 else{
     seleccionado = 'pan'
 } */
-
+/* 
 let eleccion_usuario = prompt("Elegi 'pan' o 'queso'");
 
 let numero_random = Math.floor(Math.random() * 20) + 1;
@@ -105,4 +105,62 @@ if (palabra === eleccion_usuario) {
     console.log("¡Ganaste!");
 } else {
     console.log("Perdiste.");
+} */
+
+/* Funciones */
+/* 
+Nos permiten guardar bloques de codigo parametrizables en memoria
+*/
+//arrow function / funcion en flecha
+/* const saludar_2 = () => {
+    console.log('hola mundo')
+} */
+
+//Declaracion de una funcion
+//Cuando declaramos una funcion basicamente estamos diciendo esta funcion existe con este nombre y hace esto, es un manual de lo que hara
+/* function saludar(){
+    console.log('hola mundo')
+} */
+
+//Invocacion / llamada de la funcion / ejecutar
+/* saludar()
+saludar()
+saludar()
+ */
+
+//a y b son los parametros de la funcion sumar
+//Un parametro es un valor que se le transmitira a una funcion cuando es invocada
+/* function sumar (a, b){
+    console.log('El resultado de ' + a + ' + ' + b + ' es ' + (a + b))
 }
+
+
+let caja_este_mes = 40000
+let caja_mes_pasado = 79000
+
+sumar(caja_este_mes, caja_mes_pasado)
+sumar(7, 90) */
+
+
+//f(x) = 2x + 3
+//f(x = 2) = 2.2 + 3 = 7
+//f(x = 3) = 2.3 + 3 = 9
+
+/* 
+Crear una funcion llamada calcularIva que recibira un numero y mostrara por consola "el iva de ${numero} es ${iva}"
+*/
+/* function calcularIva (precio){
+    let iva = precio * 0.21
+    console.log("el iva de $" + precio + " es $" + iva)
+}
+
+calcularIva(7000) */
+
+/* 
+Crear una funcion llamada saludar que reciba un nombre y diga por consola "Hola {nombre}!"
+*/
+
+function saludar (nombre){
+    console.log("Hola " + nombre + '!')
+}
+saludar('Pepe')
