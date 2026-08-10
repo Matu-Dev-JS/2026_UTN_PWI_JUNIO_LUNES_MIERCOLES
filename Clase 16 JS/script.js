@@ -27,7 +27,7 @@ console.log(nombres_2) */
 //Nos permiten manipular un array
 
 
-let nombres = ['pepe', 'juan', 'maria', 'carlos']
+//let nombres = ['pepe', 'juan', 'maria', 'carlos']
 
 //Mutables
 //Modifican el array original
@@ -77,8 +77,40 @@ nombres.splice(indice_posterior_juan, 0, 'adrian')
 
 console.log(nombres) */
 
-let nombres = ['pepe', 'juan', 'maria', 'carlos', 'jose', 'julieta', 'ana']
+/* let nombres = ['pepe', 'juan', 'maria', 'carlos', 'jose', 'julieta', 'ana']
 
 //Verificar si existe 'pedro', en caso de existir decir "Pedro!" por consola
+function estaPedro(){
+    if(nombres.includes("pedro")){
+        console.log("Pedro!")
+    }
+    else{
+        console.log("Pedro no esta!")
+    }
+}
+estaPedro()
+
+
 //eliminar a 'maria'
+let indice_maria = nombres.indexOf("maria")
+nombres.splice(indice_maria, 1)
+
 //Reemplazar a 'jose' por 'josesito'
+let indice_jose = nombres.indexOf('jose');
+nombres.splice(indice_jose, 1, 'josesito');
+
+console.log(nombres); */
+
+//FOR OF
+//Un bucle para recorrer arrays
+/* let nombres = ['pepe', 'juan', 'maria']
+
+
+//Por cada nombre de la lista de nombres ejecutar x bloque de codigo
+for(let nombre of nombres){
+    console.log("Hola " + nombre + '!')
+} */
+
+const notas = [90, 40, 100]
+//Crear una funcion llamada calcularPromedio que dado una lista de numeros me devuelva su promedio
+//Usar FOR OF para recorrer la lista
