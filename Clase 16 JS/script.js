@@ -192,8 +192,8 @@ const productos = [
 
 //TAREA: Funciones, arrays y objetos
 
-//buscarProductoPorId(productos, idBuscado) Buscar un producto por id
-//buscarProductoPorNombre(productos, nombreBuscado) Buscar un producto por nombre
-//filtrarPorPrecioMin(productos, precioMin) Filtrar todos los productos que su precio se mayor a cierto numero
+//buscarProductoPorId(productos, idBuscado) Buscar un producto por id y retornarlo
+//buscarProductoPorNombre(productos, nombreBuscado) Buscar un producto por nombre y retornarlo
+//filtrarPorPrecioMin(productos, precioMin) Filtrar todos los productos que su precio se mayor a cierto numero y devolver la lista
 //agregarCategoriaAProducto(productos, id, categoria) Agregar categoria (en caso de que no exista)
 //eliminarProductoPorId(productos, id) Eliminar producto por id
