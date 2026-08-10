@@ -127,7 +127,73 @@ function calcularPromedio (numeros){
 } */
 
 //Crear una funcion llamada contarNombres que dada una lista de nombres y el nombre que queremos buscar, nos cuente cuantas veces un nombre esta dentro de la lista. La funcion debe devolver esa cuenta, si no hay ninguno entonces debe devolver 0.
-let nombres = ['tv noblex', 'tv samsung', 'tv noblex']
-contarNombres(nombres, 'tv noblex') //2
+/* let nombres = ['tv noblex', 'tv samsung', 'tv noblex'] */
+/* contarNombres(nombres, 'tv noblex') //2
 contarNombres(nombres, 'pepito') //0
 contarNombres(nombres, 'tv samsung') //1
+ */
+/* function contarNombres(lista, nombreBuscado) {
+    let contador = 0;
+    for (const nombre of lista) {
+        if (nombre === nombreBuscado) {
+            contador += 1 
+        }
+    }
+    return contador;
+}
+
+console.log(contarNombres(nombres, 'tv noblex')) */
+
+
+//Objetos
+/* const producto = {
+    nombre: 'Tv noblex',
+    id: 1,
+    precio: 120000,
+    categorias: ['Tecnologia', 'Hogar']
+} */
+
+/* //Notacion de corchetes
+producto['stock'] = 20
+
+//Notacion de puntos
+producto.precio = producto.precio + 1
+
+const usuario = {
+    'DNI': 1111111,
+    "Nombre completo": 'Pepe Suarez'
+} */
+
+const productos = [
+    {
+        nombre: 'tv samsung',
+        id: 1,
+        precio: 1200000,
+        categorias: ['Tecnologia', 'Hogar']
+    },
+    {
+        nombre: 'tv noblex',
+        id: 2,
+        precio: 1000000,
+        categorias: ['Tecnologia', 'Hogar']
+    }
+]
+
+//Quiero subir 20000 el precio de la tv noblex (por id, 2)
+/* function subirPrecio (productos, idProducto, precioASubir){
+    for(const producto of productos){
+        if(producto.id === idProducto){
+            producto.precio = producto.precio + precioASubir
+            break;
+        }
+    }
+}
+ */
+
+//TAREA: Funciones, arrays y objetos
+
+//buscarProductoPorId(productos, idBuscado) Buscar un producto por id
+//buscarProductoPorNombre(productos, nombreBuscado) Buscar un producto por nombre
+//filtrarPorPrecioMin(productos, precioMin) Filtrar todos los productos que su precio se mayor a cierto numero
+//agregarCategoriaAProducto(productos, id, categoria) Agregar categoria (en caso de que no exista)
+//eliminarProductoPorId(productos, id) Eliminar producto por id
