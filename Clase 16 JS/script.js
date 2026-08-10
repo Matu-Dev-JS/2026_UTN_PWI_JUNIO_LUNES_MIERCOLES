@@ -111,6 +111,23 @@ for(let nombre of nombres){
     console.log("Hola " + nombre + '!')
 } */
 
-const notas = [90, 40, 100]
+//const notas = [90, 40, 100]
 //Crear una funcion llamada calcularPromedio que dado una lista de numeros me devuelva su promedio
 //Usar FOR OF para recorrer la lista
+/* const notas = [90, 40, 100];
+
+
+function calcularPromedio (numeros){
+    let sumaTotal = 0; 
+    for (let numero of numeros) {
+        sumaTotal += numero;
+    }
+    let promedio = sumaTotal / numeros.length
+    return promedio
+} */
+
+//Crear una funcion llamada contarNombres que dada una lista de nombres y el nombre que queremos buscar, nos cuente cuantas veces un nombre esta dentro de la lista. La funcion debe devolver esa cuenta, si no hay ninguno entonces debe devolver 0.
+let nombres = ['tv noblex', 'tv samsung', 'tv noblex']
+contarNombres(nombres, 'tv noblex') //2
+contarNombres(nombres, 'pepito') //0
+contarNombres(nombres, 'tv samsung') //1
