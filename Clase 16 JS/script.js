@@ -163,7 +163,7 @@ const usuario = {
     'DNI': 1111111,
     "Nombre completo": 'Pepe Suarez'
 } */
-
+/* 
 const productos = [
     {
         nombre: 'tv samsung',
@@ -177,7 +177,7 @@ const productos = [
         precio: 1000000,
         categorias: ['Tecnologia', 'Hogar']
     }
-]
+] */
 
 //Quiero subir 20000 el precio de la tv noblex (por id, 2)
 /* function subirPrecio (productos, idProducto, precioASubir){
@@ -190,10 +190,117 @@ const productos = [
 }
  */
 
+const productos = [
+    { id: 1, nombre: "TV", precio: 500, categorias: ["electronica"] },
+    { id: 2, nombre: "Celular samsung galaxy s20", precio: 300, categorias: ["electronica", "moviles"] },
+    { id: 3, nombre: "Licuadora", precio: 100, categorias: ["hogar"] },
+    { id: 4, nombre: "Laptop", precio: 800, categorias: ["electronica", "computacion"] }
+];
+
 //TAREA: Funciones, arrays y objetos
 
+//Sebastian Alejandro
 //buscarProductoPorId(productos, idBuscado) Buscar un producto por id y retornarlo
+
+/* 
+productos = array de objetos (id: number, precio: number, nombre: string, categorias: array de string)
+idBuscado = number
+
+devuelve = null (si no encuentra el producto) | producto (objeto)
+*/
+/* function buscarProductoPorId(productos, idBuscado) {
+    for (let producto of productos) {
+        if (producto.id === Number(idBuscado)) {
+            return producto;
+        }
+    }
+    return null;
+}
+console.log(buscarProductoPorId(productos, 10)) */
+
+//Mateo Dominguez
 //buscarProductoPorNombre(productos, nombreBuscado) Buscar un producto por nombre y retornarlo
+
+/* 
+productos = array de objetos (id: number, precio: number, nombre: string, categorias: array de string)
+nombreBuscado = string
+
+devuelve = producto | undefined
+*/
+/* function buscarProductoPorNombre(productos, nombreBuscado){
+    for(let producto of productos){
+        if( producto.nombre.toLowerCase().includes( nombreBuscado.toLowerCase() ) ){
+            return producto
+        }
+    }
+    return null
+}
+
+console.log(buscarProductoPorNombre(productos, "s20")) */
+
+//Agustin Ignacio
 //filtrarPorPrecioMin(productos, precioMin) Filtrar todos los productos que su precio se mayor a cierto numero y devolver la lista
+
+/* 
+productos = array de objetos (id: number, precio: number, nombre: string, categorias: array de string)
+precioMin = number
+
+devuelve = array de objetos (id: number, precio: number, nombre: string, categorias: array de string)
+*/
+/* function filtrarPorPrecioMin(productos, precioMin){
+    const productosFiltrados=[]
+    for(const producto of productos){
+        if(producto.precio >= precioMin){
+            productosFiltrados.push(producto)
+        }
+    }
+    return productosFiltrados
+}
+
+console.log(filtrarPorPrecioMin(productos, 10)) */
+
+//Ezequiel Kampmann
 //agregarCategoriaAProducto(productos, id, categoria) Agregar categoria (en caso de que no exista)
+
+/* 
+productos = array de objetos (id: number, precio: number, nombre: string, categorias: array de string)
+id = number
+categoria = string 
+*/
+
+/* function agregarCategoriaAProducto(productos, id, categoria) {
+    for(let producto of productos){
+        if(producto.id === id){
+            if(!producto.categorias.includes(categoria)){
+                producto.categorias.push(categoria)
+                return true
+            }
+            return false
+        }
+    }
+    return false
+}
+console.log(agregarCategoriaAProducto(productos, 50, 'pepe'))
+console.log(productos) */
+
 //eliminarProductoPorId(productos, id) Eliminar producto por id
+/* 
+productos = array de objetos (id: number, precio: number, nombre: string, categorias: array de string)
+id = number
+*/
+
+/* function eliminarProductoPorId( productos, id ){
+    for (
+        let i = 0;
+        i < productos.length;
+        i = i + 1
+    ){
+        const producto = productos[i]
+        if(producto.id === id){
+            productos.splice(i, 1)
+            break;
+        }
+    }
+}
+
+eliminarProductoPorId( productos, 4 ) */
