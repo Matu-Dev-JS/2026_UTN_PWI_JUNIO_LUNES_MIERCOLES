@@ -76,7 +76,7 @@ const caja = document.getElementById('caja')
 
 
 let html_productos = ''
-for(let producto of productos){
+for (let producto of productos) {
     html_productos = html_productos + `
         <div>
             <h2 class='producto_titulo'>${producto.titulo}</h2>
@@ -90,3 +90,70 @@ for(let producto of productos){
     `
 }
 caja.innerHTML = html_productos
+
+/* 
+const mensajes = [
+    {
+        autor: 'pepe',
+        mensaje: "hola que tal!",
+        fecha: '21:30',
+        id: 1
+    },
+    {
+        autor: 'Tu',
+        mensaje: "Todo bien y vos?",
+        fecha: '21:32',
+        id: 2
+    },
+    {
+        autor: 'pepe',
+        mensaje: 'Genial!',
+        fecha: '21:35',
+        id: 3
+    }
+] */
+/* 
+Renderizar la lista de mensajes
+<div>
+    <h3>Autor</h3>
+    <p>Mensaje</p>
+    <span>Fecha</span>
+    <hr>
+</div>
+*/
+
+const mensajes = [
+    {
+        autor: 'pepe',
+        mensaje: "hola que tal!",
+        fecha: '21:30',
+        id: 1
+    },
+    {
+        autor: 'Tu',
+        mensaje: "Todo bien y vos?",
+        fecha: '21:32',
+        id: 2
+    },
+    {
+        autor: 'pepe',
+        mensaje: 'Genial!',
+        fecha: '21:35',
+        id: 3
+    }
+]
+const chatContainer = document.getElementById('chat');
+
+let chat_html = ''
+for (const mensaje of mensajes) {
+    chat_html += `
+        <div>
+        <h3>${mensaje.autor}</h3>
+        <p>${mensaje.mensaje}</p>
+        <span>${mensaje.fecha}</span>
+        <hr>
+        </div>
+    `;
+}
+
+chatContainer.innerHTML = chat_html
