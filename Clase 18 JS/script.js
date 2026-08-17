@@ -28,3 +28,51 @@ Recomendacion:
 - Tener una variable en JS con el valor de tu contador y esa variable mostrarla en el span
 
 */
+
+
+const btnResta = document.getElementById("btn_cont_resta")
+const btnSuma = document.getElementById("btn_cont_suma")
+const spanContador = document.getElementById("contador")
+
+//Esto es un estado
+//Es inmutable
+let contador = 0
+
+function renderContador (){
+    spanContador.textContent = contador
+}
+
+//Esta funcion es la encargada de modificar el estado
+//Cada vez que modifique el valor de mi estado debo volver a renderizar todos los componentes asociados a mi estado
+function setContador (valor){
+    contador = valor
+    renderContador()
+}
+
+function sumar(){
+    setContador(contador + 1)
+}
+
+function restar(){
+    setContador(contador - 1)
+}
+
+btnResta.addEventListener (
+    "click", 
+    restar
+)
+btnSuma.addEventListener(
+    "click",
+    sumar
+)
+
+
+/* 
+Selector de opciones
+
+Al clickear una opcion la seleccionare, dependiendo de la opcion que seleccione en el div de opcion seleccionada debe aparecer el numero de la opcion (selecciono opcion 1 y debe decir "Opcion seleccionada: 1")
+*/
+
+const button_1 = document.getElementById('btn_1')
+
+console.log(button_1.getAttribute('data-option-number'))
