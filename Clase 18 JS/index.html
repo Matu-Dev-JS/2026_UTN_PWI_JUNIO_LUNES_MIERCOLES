@@ -15,20 +15,38 @@
     <hr />
 
     <button id="btn_cont_resta">-</button>
-    <span id="contador">0</span>
+    <span id="contador"></span>
     <button id="btn_cont_suma">+</button>
 
     <hr>
 
-    <button 
-        data-favorite-colour="blue" 
-        data-option-number="1" 
-        id="btn_1" 
-    >Opcion 1</button>
-    <button>Opcion 2</button>
-    <button>Opcion 3</button>
+    <button data-option-number="1" id="btn_1">Opcion 1</button>
+    <button data-option-number="2" id="btn_2">Opcion 2</button>
+    <button data-option-number="3" id="btn_3">Opcion 3</button>
+    <div id="resultado">Opcion seleccionada: </div>
 
-    <div>Opcion seleccionada: </div>
+    <hr>
+    <form id="formulario-login">
+        <h1>Inciar sesion</h1>
+        <div>
+            <label for="email">Email:</label>
+            <br/>
+            <input 
+                type="email" 
+                placeholder="pepe@gmail.com" 
+                name="email"
+            />
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <br/>
+            <input 
+                type="password" 
+                name="password"
+            >
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
 
     <script src="./script.js"></script>
 </body>
