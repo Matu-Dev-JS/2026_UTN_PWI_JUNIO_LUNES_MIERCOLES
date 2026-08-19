@@ -36,3 +36,13 @@ Dada una lista de productos que actuara como estado
     - Crear la funcion setProductos (valor) y al llamarla cambiara el valor del estado y volvera a renderizar la lista de productos
         Para probar este setter podrian llamar a setProductos([]) y en pantalla deberian ver el parrafo indicando que la lista esta vacia
 */
+
+
+//Ejemplo de ayuda de como hacer el renderProductos
+const lista_productos = document.getElementById('lista-productos')
+
+let lista_productos_string = ''
+for(const producto of productos){
+    lista_productos_string = lista_productos_string + `<div></div>`
+}
+lista_productos.innerHTML = lista_productos_string
