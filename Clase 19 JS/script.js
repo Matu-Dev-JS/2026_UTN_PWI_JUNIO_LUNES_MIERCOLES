@@ -133,3 +133,34 @@ console.log(historial) */
 Crear una funcion llamada eliminarProductoPorId
     Recibira un id y modificara el estado (mediante el setter) para eliminar el producto con el id recibido, sino existe devolvera null.
 */
+
+
+function eliminarProductoPorId (producto_id){
+    const productos_estado_clonado = [...productos_estado]
+    let producto_indice = null
+    for(const producto of productos_estado_clonado){
+        if(producto.id === producto_id){
+            producto_indice = productos_estado_clonado.indexOf(producto)
+            productos_estado_clonado.splice(producto_indice, 1)
+            setProductos(productos_estado_clonado)
+            return true
+        }
+    }
+    return null
+}
+
+/* 
+const nombres = [{nombre: 'pepe'}, {nombre: 'juan'}, {nombre: 'maria'}]
+
+let indice_juan
+
+for(const persona of nombres){
+    if(persona.nombre === 'juan'){
+        indice_juan = nombres.indexOf(persona)
+    }
+
+}
+
+nombres.splice(indice_juan, 1)
+
+console.log(nombres) */
