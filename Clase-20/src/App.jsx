@@ -1,4 +1,5 @@
 import React from 'react'
+import './global.css'
 import ProductCard from './Components/ProductCard/ProductCard'
 import Message from './Components/Message/Message'
 
@@ -8,6 +9,9 @@ export default function App() {
   let precio = 40000
   return (
     <div>
+      <div className='product-card'>
+        hola mundo
+      </div>
       <h1>Hola mundo!</h1>
       <a>Click aqui</a>
       <div>
@@ -18,17 +22,20 @@ export default function App() {
         title={"Tv Samsung 32\""}
         price={300000}
         description={"Tv Samsung 32\" con resolucion Full HD"}
+        isOnlyForMembers={true}
         id='1'
       />
       <ProductCard
         title={"Tv samsung 42\""}
-        price={400000}
+        price={40}
         description={"Tv Samsung 42\" con resolucion Full HD"}
+        isOnlyForMembers={false}
       />
       <ProductCard
         title={"Tv samsung 52\""}
         price={600000}
         description={"Tv Samsung 52\" con resolucion Full HD"}
+        isOnlyForMembers={true}
       />
 
       <Message
