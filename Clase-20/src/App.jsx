@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './global.css'
 import ProductCard from './Components/ProductCard/ProductCard'
 import Message from './Components/Message/Message'
+import Counter from './Components/Counter/Counter'
 
 
 export default function App() {
@@ -39,7 +40,7 @@ export default function App() {
           </div>
         </div>
       }
-
+      <Counter/>
     </div>
   )
 }
@@ -52,3 +53,13 @@ const [nombre, apellido, edad] = persona_1
 /* const persona_nombre = persona_1[0]
 const persona_apellido = persona_1[1]
 const pesona_edad = persona_1[2] */
+
+
+/* 
+Counter.jsx
+Desarrollar el componente Counter que sera un contador
+El contador debera contar con un boton para incrementar, otro para decrementar y el visualizador del contador
+El contador debe funcionar, es decir debe poder aumentar y decrementar al presionar los botones.
+El contador debe iniciar en 0
+
+*/
