@@ -3,3 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.pantalla-chat {
+    background-color: #efeae2;
+    padding: 20px;
+    min-height: 400px;
+}

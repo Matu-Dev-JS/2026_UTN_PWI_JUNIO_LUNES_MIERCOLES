@@ -37,31 +37,34 @@ export default function App() {
         description={"Tv Samsung 52\" con resolucion Full HD"}
         isOnlyForMembers={true}
       />
+      <div className="pantalla-chat">
 
-      <Message
-        autor={"Yo"}
-        contenido={"Hello, i was wondering when my order will be shipped?"}
-        fecha={"1:30 PM"}
-        estatus_envio={"visto"}
-      />
-      <Message
-        autor={"Maria"}
-        contenido={"Your order has been processed and we are preparing..."}
-        fecha={"1:32 PM"}
-        estatus_envio={"enviado"}
-      />
-      <Message
-        autor={"Yo"}
-        contenido={"Thank you"}
-        fecha={"1:32 PM"}
-        estatus_envio={"visto"}
-      />
-      <Message
-        autor={"Maria"}
-        contenido={"Your order has been shipped and is spected to be..."}
-        fecha={"12:00 PM"}
-        estatus_envio={"Enviado"}
-      />
+
+        <Message
+          autor={"Yo"}
+          contenido={"Hello, i was wondering when my order will be shipped?"}
+          fecha={"1:30 PM"}
+          estatus_envio={"visto"}
+        />
+        <Message
+          autor={"Maria"}
+          contenido={"Your order has been processed and we are preparing..."}
+          fecha={"1:32 PM"}
+          estatus_envio={"enviado"}
+        />
+        <Message
+          autor={"Yo"}
+          contenido={"Thank you"}
+          fecha={"1:32 PM"}
+          estatus_envio={"visto"}
+        />
+        <Message
+          autor={"Maria"}
+          contenido={"Your order has been shipped and is spected to be..."}
+          fecha={"12:00 PM"}
+          estatus_envio={"enviado"}
+        />
+      </div>
     </div>
   )
 }
