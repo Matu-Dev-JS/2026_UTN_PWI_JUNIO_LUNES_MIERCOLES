@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './global.css'
+import ContactsList from './Components/ContactsList/ContactsList'
 
 
 
@@ -32,20 +33,24 @@ export default function App() {
   Las listas JSX se renderizan directamente en pantalla de forma ordenada
   */
   const mensajes_jsx = []
-  
-  for(const mensaje of mensajes_servidor){
+
+  for (const mensaje of mensajes_servidor) {
     mensajes_jsx.push(
       <div key={mensaje.id}>
         <h2>{mensaje.autor}</h2>
         <p>{mensaje.contenido}</p>
         <span>Fecha: {mensaje.fecha}</span>
-        <hr/>
+        <hr />
       </div>
     )
   }
+
+
+
   return (
     <div>
       {mensajes_jsx}
+      <ContactsList/>
     </div>
   )
 }
@@ -65,5 +70,6 @@ Contactos:
 ]
 
 Renderizar la lista de contactos
+No es necesario hacer estilos
 Ejemplo: https://user-images.githubusercontent.com/44744039/224526440-b4eb6a54-4dda-430c-a681-286f5b406fe7.png
 */
