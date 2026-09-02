@@ -1,65 +1,69 @@
 import React, { useState } from 'react'
 import './global.css'
-import ProductCard from './Components/ProductCard/ProductCard'
-import Message from './Components/Message/Message'
-import Counter from './Components/Counter/Counter'
+
 
 
 export default function App() {
 
+  const mensajes_servidor = [
+    {
+      id: 1,
+      autor: 'Jose',
+      contenido: 'Hola!!',
+      fecha: '26 agosto 2026 11:45'
+    },
+    {
+      id: 2,
+      autor: 'Maria',
+      contenido: 'Todo bien?! 😎',
+      fecha: '26 agosto 2026 11:55'
+    },
+    {
+      id: 3,
+      autor: 'Pedro',
+      contenido: 'Que cuentan?',
+      fecha: '26 agosto 2026 11:56'
+    }
+
+  ]
   /* 
-  useState es una funcion de react que te permite declarar estados
-  useState recibe el valor incial de tu estado
-  useState retorna un array de 2 posiciones (tupla)
-    La primera posicion representa el valor del estado en si
-    La segunda posicion del array representa la funcion de setteo (la funcion para actualizar el estado)
-
-  LOS ESTADOS SON INMUTABLES, si queremos modificar/actualizar el valor de un estado debemos hacerlo mediante el setter
+  En react tenemos listas de JSX
+  Las listas de JSX son arrays donde cada elemento tiene un expresion JSX
+  Las listas JSX se renderizan directamente en pantalla de forma ordenada
   */
-  /* const modalAbiertoEstado = useState(false)
-  const modalAbierto = modalAbiertoEstado[0]
-  const setModalAbierto = modalAbiertoEstado[1] */
-  const [modalAbierto, setModalAbierto] = useState(false)
-
-
-  function abrirModal (){
-    setModalAbierto(true)
+  const mensajes_jsx = []
+  
+  for(const mensaje of mensajes_servidor){
+    mensajes_jsx.push(
+      <div key={mensaje.id}>
+        <h2>{mensaje.autor}</h2>
+        <p>{mensaje.contenido}</p>
+        <span>Fecha: {mensaje.fecha}</span>
+        <hr/>
+      </div>
+    )
   }
-
-  console.log('[App.jsx] Me renderize')
   return (
     <div>
-      <button onClick={abrirModal}>Abrir modal</button>
-      {
-        modalAbierto
-        &&
-        <div className='modal-container'>
-          <div className='modal'>
-            <h1>Hola soy un modal</h1>
-            <button>Cerrar</button>
-          </div>
-        </div>
-      }
-      <Counter/>
+      {mensajes_jsx}
     </div>
   )
 }
 
-
-
-const persona_1 = ['pepe', 'suarez', 50]
-
-const [nombre, apellido, edad] = persona_1
-/* const persona_nombre = persona_1[0]
-const persona_apellido = persona_1[1]
-const pesona_edad = persona_1[2] */
-
-
 /* 
-Counter.jsx
-Desarrollar el componente Counter que sera un contador
-El contador debera contar con un boton para incrementar, otro para decrementar y el visualizador del contador
-El contador debe funcionar, es decir debe poder aumentar y decrementar al presionar los botones.
-El contador debe iniciar en 0
+Contactos:
+[
+  {
+    id: 1
+    nombre: 'Marcos',
+    ultimo_mensaje: 'hay que juntarnos!..',
+    imagen: "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fwww.gravatar.com%2Favatar%2F2c7d99fe281ecd3bcd65ab915bac6dd5%3Fs%3D250",
+    mensajes_sin_leer: 2,
+    fecha_ultimo_mensaje: "12/2/2023 14:30"
+  },
+  ...sigan completando con almenos 3 contactos
+]
 
+Renderizar la lista de contactos
+Ejemplo: https://user-images.githubusercontent.com/44744039/224526440-b4eb6a54-4dda-430c-a681-286f5b406fe7.png
 */

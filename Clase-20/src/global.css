@@ -33,3 +33,7 @@
     min-width: 550px;
     min-height: 400px;
 }
+
+.error-text{
+    color: red;
+}
