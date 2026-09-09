@@ -1,23 +1,25 @@
 import React from 'react';
 import './Message.css';
 
-function Message(propiedades) {
+function Message({estatus_envio, autor, contenido, fecha}) {
+
+
     // Evaluo si el mensaje fue enviado por "Yo"
-    const esMio = propiedades.autor === "Yo";
+    const esMio = autor === "Yo";
 
 
-    const esVisto = propiedades.estatus_envio === "visto";
+    const esVisto = estatus_envio === "visto";
 
     return (
         <div className={"contenedor-mensaje " +  (esMio ? "mensaje-propio" : "mensaje-recibido")}>
             <div className="burbuja-mensaje">
                 {/* Si no es mio, muestro el nombre del remitente arriba */}
-                {!esMio && <span className="autor-mensaje">{propiedades.autor}</span>}
+                {!esMio && <span className="autor-mensaje">{autor}</span>}
 
-                <p className="contenido-mensaje">{propiedades.contenido}</p>
+                <p className="contenido-mensaje">{contenido}</p>
 
                 <div className="metadatos-mensaje">
-                    <span className="hora-mensaje">{propiedades.fecha}</span>
+                    <span className="hora-mensaje">{fecha}</span>
                     
                     {/* Solo si es un mensaje propio muestro las barritas de estado */}
                     {esMio && (

@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
 
+/* 
+Crear el hook useLogin que tenga toda logica actualmente definida en el componente LoginForm 
+*/
+
 export default function LoginForm() {
     
     const [formState, setFormState] = useState({email: '', password: ''})
@@ -15,9 +19,10 @@ export default function LoginForm() {
         const campo = evento.target //hace referencia al campo que el usuario esta modificando
         const nombre_campo = campo.name
         const valor_campo = campo.value
+
         setFormState(
             (prevFormState) => {
-                const cloned_state = {...prevFormState} //spread operator
+                const cloned_state = {...prevFormState} 
                 cloned_state[nombre_campo] = valor_campo
                 return cloned_state
             }
@@ -53,6 +58,8 @@ export default function LoginForm() {
         </form>
     )
 }
+
+
 
 
 /* 
