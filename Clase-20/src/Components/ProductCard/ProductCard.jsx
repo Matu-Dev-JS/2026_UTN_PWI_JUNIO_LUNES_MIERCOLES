@@ -61,14 +61,3 @@ function ProductCard(propiedades) {
     )
 }
 export default ProductCard
-
-
-//Declaracion
-//En la declaracion determinamos que valores vamos a recibir (parametros)
-function sumar (a, b){
-    return a + b
-}
-
-//invocacion
-sumar(1, 1)
-sumar(2, 2)
