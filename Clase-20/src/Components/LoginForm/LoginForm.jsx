@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import useLogin from '../../hooks/useLogin'
 
 /* 
 Crear el hook useLogin que tenga toda logica actualmente definida en el componente LoginForm 
@@ -6,29 +7,8 @@ Crear el hook useLogin que tenga toda logica actualmente definida en el componen
 
 export default function LoginForm() {
     
-    const [formState, setFormState] = useState({email: '', password: ''})
+    const {formState, handleSubmit, handleChangeInput} = useLogin()
 
-    function handleSubmit (evento){
-        evento.preventDefault() 
-        const form = evento.target 
-        const email = form.email_login.value
-        const password = form.password.value
-    }
-
-    function handleChangeInput (evento) {
-        const campo = evento.target //hace referencia al campo que el usuario esta modificando
-        const nombre_campo = campo.name
-        const valor_campo = campo.value
-
-        setFormState(
-            (prevFormState) => {
-                const cloned_state = {...prevFormState} 
-                cloned_state[nombre_campo] = valor_campo
-                return cloned_state
-            }
-        )
-    }
-    console.log(formState)
     return (
         <form onSubmit={handleSubmit}>
             <h1>Iniciar sesion</h1>
