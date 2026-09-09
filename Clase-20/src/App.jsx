@@ -1,26 +1,21 @@
 import React, { useEffect, useState } from 'react'
 import './global.css'
-import ContactsList from './Components/ContactsList/ContactsList'
-import PostList from './Components/PostList/PostList'
-import Counter from './Components/Counter/Counter'
-import LoginForm from './Components/LoginForm/LoginForm'
-import Message from './Components/Message/Message'
+import { Route, Routes } from 'react-router'
+import HomeScreen from './Screens/HomeScreen/HomeScreen'
+import LoginScreen from './Screens/LoginScreen/LoginScreen'
+import NotFoundScreen from './Screens/NorFoundScreen/NotFoundScreen'
 
 
 
 export default function App() {
  
   return (
-    <div>
-      <LoginForm/>
-
-      <Message 
-        estatus_envio={'visto'} 
-        autor={'jeremias'} 
-        contenido={'hola!!'} 
-        fecha={'hoy'}
-      />
-    </div>
+    <Routes>
+      <Route path='/' element={<HomeScreen/>}/>
+      <Route path='/home' element={<HomeScreen/>}/>
+      <Route path='/login' element={<LoginScreen/>}/>
+      <Route path='*' element={<NotFoundScreen/>} />
+    </Routes>
   )
 }
 
