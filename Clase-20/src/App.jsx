@@ -5,6 +5,7 @@ import HomeScreen from './Screens/HomeScreen/HomeScreen'
 import LoginScreen from './Screens/LoginScreen/LoginScreen'
 import NotFoundScreen from './Screens/NorFoundScreen/NotFoundScreen'
 import ProductDetailScreen from './Screens/ProductDetailScreen/ProductDetailScreen'
+import ContactDetailScreen from './Screens/ContactDetailScreen/ContactDetailScreen'
 
 
 
@@ -17,9 +18,19 @@ export default function App() {
       <Route path='/login' element={<LoginScreen />} />
       <Route path='/product/:product_id' element={<ProductDetailScreen />} />
       <Route path='*' element={<NotFoundScreen />} />
+      <Route 
+        path='/contact/:contact_id' 
+        element={<ContactDetailScreen />}
+      />
     </Routes>
   )
 }
+
+
+
+
+
+
 
 const contact_list = [
   {
