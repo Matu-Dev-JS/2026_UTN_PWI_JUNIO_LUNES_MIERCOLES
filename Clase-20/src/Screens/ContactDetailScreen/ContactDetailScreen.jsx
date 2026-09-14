@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useParams } from 'react-router'
 import Sidebar from '../../Components/Sidebar/Sidebar'
+import { ThemeContext } from '../../context/ThemeContext'
 
 
 const contact_list = [
@@ -39,6 +40,9 @@ const contact_list = [
 ]
 
 export default function ContactDetailScreen() {
+    const {theme} = useContext(ThemeContext)
+    console.log('[ContactDetailScreen.jsx] ', theme)
+
     const { contact_id } = useParams()
     const contactId = Number(contact_id)
     let contact_selected = null
