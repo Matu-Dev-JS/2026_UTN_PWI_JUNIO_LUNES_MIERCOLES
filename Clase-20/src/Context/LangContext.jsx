@@ -48,7 +48,7 @@ export function LangContextProvider ({children}){
     const [lang, setLang] = useState ("en")
 
     function changeLang (lang){
-        
+        setLang(lang)
     }
     const providerValues = {
         langSelected: lang, 
