@@ -1,9 +1,14 @@
-import React from "react"
+import React, { useContext } from "react"
 
 import { Link } from "react-router"
 import ContactOption from "../ConctactOption/ContactOption"
+import { ContactContext } from "../../Context/ContactContext"
 
 export default function Sidebar() {
+
+    const {contacts} = useContext(ContactContext)
+    
+    console.log('[Sidebar.jsx] Contactos', contacts)
 
     const contact_list = [
         {

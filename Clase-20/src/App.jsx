@@ -11,6 +11,7 @@ import { LangContext } from './Context/LangContext'
 import ProductsScreen from './Screens/ProductsScreen/ProductsScreen'
 import NewProductScreen from './Screens/NewProductScreen/NewProductScreen'
 import { ProductContextProvider } from './Context/ProductContext'
+import { ContactContextProvider } from './Context/ContactContext'
 
 
 
@@ -23,15 +24,21 @@ export default function App() {
 
 	return (
 		<Routes>
-			<Route path='/' element={<HomeScreen />} />
 			<Route path='/home' element={<HomeScreen />} />
 			<Route path='/login' element={<LoginScreen />} />
 
 			<Route path='*' element={<NotFoundScreen />} />
-			<Route
-				path='/contact/:contact_id'
-				element={<ContactDetailScreen />}
-			/>
+			
+			<Route element={<ContactContextProvider/>} >
+				<Route 
+					path='/' 
+					element={<HomeScreen />} 
+				/>
+				<Route
+					path='/contact/:contact_id'
+					element={<ContactDetailScreen />}
+				/>
+			</Route>
 
 
 			<Route element={<ProductContextProvider/>}>
