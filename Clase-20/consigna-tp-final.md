@@ -21,13 +21,13 @@ La página debe contar con el uso de estados.
 
 Se valora el uso de contextos.
 
-El enrutamiento de la página debe ser desarrollado con react-router / react-router-dom.
+El enrutamiento de la página debe ser desarrollado con react-router.
 
 Debe contar con el uso de al menos 1 formulario (en whatsapp, el formulario de enviar mensaje cuenta como formulario).
 
 Deben usarse componentes.
 
-Se debe contar con al menos 2 páginas en el flujo de la aplicación y debe usarse al menos en una los parámetros de búsqueda de react-router-dom.
+Se debe contar con al menos 2 páginas en el flujo de la aplicación y debe usarse al menos en una los parámetros de búsqueda de react-router.
 
 Se valora la calidad de código siguiendo los principios de la programación vistos en clase (DRY, YAGNI, KISS).
 
